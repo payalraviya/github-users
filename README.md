@@ -1,14 +1,12 @@
-# aipxperts-task
+# github-users
 
-This template should help get you started developing with Vue 3 in Vite.
+## copy .env.example to .env. (skip if already done)
 
-## Recommended IDE Setup
+```sh
+cp .env.example .env
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- replace token with your github token
 
 ## Project Setup
 
