@@ -40,13 +40,13 @@ const filteredUsers = computed(() => {
 
 <template>
   <div>
-    <div class="topnav" style="margin-bottom: 20px">
+    <nav class="topnav" style="margin-bottom: 20px">
       <a class="active" href="/">Home</a>
       <div class="search-container">
         <input type="text" v-model="searchQuery" placeholder="Search.." name="search" />
         <img src="@/assets/search.svg" alt="search icon" class="search-icon" />
       </div>
-    </div>
+    </nav>
     <div v-if="isLoading">Loading.....</div>
     <div v-else>
       <div class="card-container">
@@ -55,7 +55,7 @@ const filteredUsers = computed(() => {
             ><img class="card-image" :src="user.avatar_url" :alt="user.login"
           /></a>
           <div class="card-content">
-            <a :href="user.html_url"
+            <a :href="user.html_url" style="text-decoration: none"
               ><h2 class="card-title">{{ user.login }}</h2></a
             >
             <p class="card-description">followers: {{ user.followers_url }}</p>
